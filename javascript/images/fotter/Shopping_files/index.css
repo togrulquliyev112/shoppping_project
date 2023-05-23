@@ -1,0 +1,465 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100;1,300&family=Poppins:wght@500&family=Roboto:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+
+body {
+    width: 100%;
+    font-family: 'Poppins';
+}
+
+.section-p {
+    padding: 40px 80px;
+}
+
+/* header start */
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E3E6F3;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.06);
+    padding: 20px 80px;
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar li {
+    list-style-type: none;
+    padding: 0px 20px;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: #1a1a1a;
+}
+
+#hero {
+    background-image: url(./images/hero/images\ \(1\).jpg);
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+   
+    background-repeat: no-repeat;
+    background-position: top 25% right 0;
+    padding: 0px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#hero h1 {
+    font-size: 40px;
+    padding-bottom: 15px;
+    font-weight: 500;
+}
+
+#hero h2 {
+    font-size: 40px;
+    padding-bottom: 15px;
+    color: green;
+}
+
+#hero h3 {
+    padding-bottom: 15px;
+    font-weight: 300;
+}
+
+#hero p {
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+#hero button {
+    background-color: rgb(0, 115, 255);
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    position: relative;
+    top: 0;
+    left: 150px;
+    cursor: pointer;
+}
+
+#feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#feature .fe-box {
+    width: 180px;
+    text-align: center;
+    border: 1px solid #cce7d0;
+    border-radius: 5px;
+    padding: 25px 15px;
+    margin: 15px 0;
+    box-shadow: 20px 20px 35px rgba(0, 0, 0, 0.06);
+}
+
+#feature .fe-box:hover {
+    box-shadow: 10px 10px 35px rgba(0, 0, 0, 0.3);
+    ;
+}
+
+#feature img {
+
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#feature .fe-box h6 {
+    display: inline-block;
+    padding: 7px 8px;
+    font-size: 15px;
+    background-color: rgb(92, 205, 194);
+    border-radius: 6px;
+    color: green;
+
+}
+
+#feature .fe-box:nth-child(2) h6 {
+    color: darkslateblue;
+}
+
+#feature .fe-box:nth-child(3) h6 {
+    color: #fff;
+}
+
+#feature .fe-box:nth-child(4) h6 {
+    color: yellow;
+}
+
+#feature .fe-box:nth-child(5) h6 {
+    color: rgb(1, 1, 5);
+}
+
+#product1 {
+    text-align: center;
+
+}
+
+#product1 h2 {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+#product1 .pro-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+
+}
+
+#product1 .pro {
+    width: 23%;
+    min-width: 200px;
+    border: 1px solid #cce7d0;
+    padding: 10px 12px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 15px 0;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    position: relative;
+}
+
+#product1 .pro:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
+
+}
+
+#product1 .pro img {
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+}
+
+#product1 .des {
+    text-align: start;
+    padding: 10px 0;
+}
+
+#product1 .des span {
+    color: #606063;
+    font-size: 12px;
+}
+
+#product1 .des h5 {
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+
+#product1 .des i {
+    font-size: 12px;
+    color: rgba(243, 181, 25)
+}
+
+#product1 .des h4 {
+    font-size: 15px;
+    color: green;
+    padding-top: 7px;
+    font-weight: 700;
+}
+
+#product1 .pro .cart {
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    background-color: #e9e9ee;
+    color: green;
+    font-weight: 700;
+    border-radius: 50px;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 15px;
+}
+
+#banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url(./images/sm-banner/t\ shirt.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 40vh;
+    width: 100%;
+}
+
+#banner h1 {
+    color: #fff;
+    font-size: 40px;
+}
+
+#banner h2 {
+    font-size: 30px;
+    color: white;
+    padding: 10px 0;
+}
+
+#banner h2 span {
+    color: red;
+}
+
+#banner button {
+    background-color: blue;
+    color: #fff;
+    padding: 15px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    transition: 0.3s ease;
+}
+
+#banner button:hover {
+    background-color: red;
+}
+
+#sm-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+#sm-banner .banner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(./images/sm-banner/t\ shirt.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 600px;
+    height: 50vh;
+    padding: 0px 20px;
+    border-radius: 10px;
+}
+
+#sm-banner .banner-box2 {
+    background-image: url(./images/banner3/yeni2.jfif)
+}
+
+#sm-banner .banner-box h2 {
+    padding-bottom: 5px;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+#sm-banner .banner-box h4 {
+    color: rgb(241, 2, 2);
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+
+#sm-banner .banner-box span {
+    font-size: 20px;
+    color: white
+}
+
+#sm-banner .banner-box button {
+    width: 130px;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    transition: 0.2s ease;
+
+}
+
+#sm-banner .banner-box button:hover {
+    background-color: orange;
+    color: #fff;
+}
+
+#banner3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#banner3 .banner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(./images/sm-banner/t\ shirt.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: 30vh;
+    padding: 0px 20px;
+    border-radius: 10px;
+}
+
+#banner3 .banner-box3 {
+    background-image: url(./images/banner3/bn2.jpg);
+}
+
+#banner3 .banner-box4 {
+    background-image: url(./images/banner3/hera_boyuk.jpg);
+}
+
+#banner3 .banner-box h3 {
+    color: #fff;
+}
+
+
+#banner3 .banner-box h2 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+#registration {
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    height: 20vh;
+
+}
+
+#registration .letter h3 {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+#registration .letter p {
+    color: #fff;
+}
+
+#registration .form input {
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    margin-right: 10px;
+}
+#registration .form button {
+    font-size: 23px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 5px;
+    background-color: rgb(72, 163, 72);
+    color: #fff;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+#registration .form button:hover {
+    background-color: orange;
+}
+#footer{
+    display: flex;
+    justify-content: space-between;
+}
+#footer a{
+    text-decoration: none;
+    color: #606063;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+#footer img{
+    width: 400px;
+   
+}
+#footer h3{
+    padding-bottom: 15px;
+}
+#footer p{
+    padding-bottom: 10px; 
+}
+#footer .icon i{
+    font-size: 25px;
+    margin-right: 10px;
+    cursor: pointer;
+    padding: 3px;
+    border-radius: 5px;
+}
